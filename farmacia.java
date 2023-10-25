@@ -1,3 +1,5 @@
+// FarmaciAPP en Java para NetBeans created by Flerkendroid - Miércoles 25 de Octubre año 2023.-
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -95,9 +97,9 @@ public class Farmacia extends JFrame {
       
       String detalleCompra = "";
       
-      // Recorrer los campos de texto relacionados con los medicamentos con un ciclo for
+      // Recorres los campos de texto relacionados con los medicamentos con el ciclo for
       for (int i = 0; i < 4; i++) {
-          // Obtener el código, el nombre, el precio y las unidades de cada medicamento
+          // Obtienes el código, el nombre, el precio y las unidades de cada medicamento de la Farmacia
           codigo = fields[i*2].getText();
           nombre = fields[i*2+1].getText();
           precioVenta = Double.parseDouble(fields[i*2+4].getText());
@@ -107,7 +109,7 @@ public class Farmacia extends JFrame {
 
           totalCompra += subtotal;
           
-          // Actualizar el detalle de la compra con el código, el nombre, el precio y las unidades de cada medicamento
+          // Se actualiza el detalle de la compra con el código, el nombre, el precio y las unidades de cada medicamento
           detalleCompra += "Código: " + codigo + "\n";
           detalleCompra += "Nombre: " + nombre + "\n";
           detalleCompra += "Precio: " + precioVenta + "\n";
